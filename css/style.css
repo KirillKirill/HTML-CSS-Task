@@ -1,0 +1,381 @@
+@font-face {
+	font-family: "Calibri";
+	src: url("../fonts/Calibri.ttf");
+}
+
+@font-face {
+	font-family: "Bebas";
+	src: url("../fonts/Bebas.ttf");
+	
+}
+@font-face {
+	font-family: "St Marie";
+	src: url("../fonts/StMarie-Thin.otf");
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+    min-width: 1600px;
+    position: relative;
+}
+
+.wrapper {
+	width: 1200px;
+	position: relative;
+	display: block;
+	margin: 0 auto;
+}
+
+.header {
+	height: 130px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #ffffff;
+	z-index: 1;
+}
+
+.header-wrapper {
+    position: relative;
+	margin: 0 auto;
+	width: 1600px;
+	height: auto;
+	min-height: 100%;
+}
+
+.logo {
+	position: absolute;
+	top: 5px;
+	left: 218px;
+}
+
+.heading {
+	height: 80px;
+	width: 120px;
+	position: absolute;
+	top: 12px;
+	left: 356px;
+}
+
+.heading h1 {
+	font-size: 37px;
+	font-family: 'Calibri';
+	color: #fb9c06;
+	letter-spacing: 1.1px;
+	text-align: center;
+}
+
+.heading h1 span {
+	font-size: 37px;
+	font-weight: 600;
+	font-family: 'Bebas';
+	color: #6e6d6b;
+}
+
+.nav-menu {
+	position: absolute;
+	top: 19px;
+	left: 800px;
+}
+
+.nav-menu-item {
+	background: url('../img/sprite.png');
+	float: left;
+	margin-left: 49px;
+	height: 50px;
+	width: 75px;
+}
+
+.nav-menu-item:first-child {
+	margin-left: 0;
+}
+
+.nav-menu-item a {
+	display: block;
+	margin-top: 58px;
+	font-size: 22px;
+	font-family: 'Calibri';
+	color: #9e9b9b;
+	letter-spacing: 0.7px;
+}
+.nav-menu-item:hover {
+	cursor: pointer;
+	text-decoration: underline;
+	transform: scale(1.2);
+}
+
+.nav-menu-item.home {background-position: 1px 0px;}
+.nav-menu-item.about {background-position: -59px 0px;}
+.nav-menu-item.work {background-position: -149px 0px;}
+.nav-menu-item.blog {background-position: -223px -1px;}
+.nav-menu-item.contact {background-position: -287px 0px;}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+ul {
+	list-style: none;
+}
+
+.slider {
+	height: 408px;
+	margin-top: 130px;
+	background: url('../img/banner.png');
+	border-top: 4px solid #fcba50;
+	border-bottom: 4px solid #fcba50;
+	position: relative;
+}
+
+.slider-rabbits {
+	position: absolute;
+	left: 20px;
+	top: 129px;
+	background: #000;
+	opacity: 0.69;
+	width: 381px;
+	height: 66px;
+}
+
+.slider-rabbits h2 {
+	font-size: 37px;
+	font-family: 'Bebas';
+	color: #fb9c06;
+	padding-top: 7px;
+	padding-left: 30px;
+	letter-spacing: 0.6px;
+}
+
+.slider-oranges {
+	position: absolute;
+	left: 11px;
+	top: 223px;
+	background: #fb9c06;
+	opacity: 0.702;
+	width: 396px;
+	height: 76px;
+}
+
+.slider-oranges h2 {
+	font-size: 37px;
+	font-family: 'Bebas';
+	color: #6e6d6b;
+	padding-top: 9px;
+	padding-left: 31px;
+	letter-spacing: 0.6px;
+}
+
+.post-content {
+	float: left;
+	display: inline-block;
+	width: 300px;
+	height: 190px;
+}
+
+.post-content p {
+	font-weight: 600;
+	padding: 25px 21px 0 21px;
+	font-size: 15px;
+	font-family: "Calibri";
+	line-height: 1.55;
+	letter-spacing: 0.25px;
+	height: 165px;
+	overflow: hidden;
+}
+
+.post-content a {
+	float: right;
+	font-size: 17px;
+	font-weight: 400;
+	letter-spacing: 0.25px;
+	color: #ffac00;
+	font-style: italic;
+	text-decoration: none;
+}
+
+.team {
+	min-height: 610px;
+}
+
+.team h3 {
+	display: block;
+	font-size: 40px;
+	font-family: "St Marie";
+	font-weight: 400;
+	color: #ff9c00;
+	width: 280px;
+    margin-top: 10px;
+	margin-left: 470px;
+	letter-spacing: 1px;
+	border-bottom: 2px solid;
+}
+
+.team-list-item {
+	float: left;
+	width: 400px;
+	height: 475px;
+	margin-top: 10px;
+}
+
+.team-list-item p {
+	padding-top: 25px;
+	font-size: 22px;
+	font-family: "Calibri";
+	color: #6e6d6b;
+	padding-left: 55px;
+	overflow: hidden;
+}
+
+.team-list-item.ceo {
+	padding-left: 60px;
+}
+
+.team-list-item.ceo figcaption{
+	padding-left: 40px;
+    padding-top: 15px;
+}
+
+.team-list-item.dev {
+	padding-left: 95px;
+}
+
+.team-list-item.dev p {
+	padding-left: 75px;
+}
+
+.team-list-item.dev figcaption{
+	padding-top: 15px;
+    padding-left: 35px;
+}
+
+.team-list-item img {
+	width: 294px;
+	height: 294px;
+	border-radius: 50% 50%;
+	overflow: hidden;
+	border: 10px solid #ffb540;
+	margin-top: 30px;
+}
+
+.team-list-item span {
+	color: #fb9c06;
+	letter-spacing: 1px;
+}
+
+.team-list-item figcaption {
+	padding-top: 20px;
+	padding-left: 30px;
+	font-size: 15px;
+	font-family: "Calibri";
+	color: #333333;
+	line-height: 1.5;
+	width: 300px;
+	height: 105px;
+	overflow: hidden;
+}
+
+.form h3 {
+	display: block;
+    font-weight: 400;
+    font-size: 40px;
+    font-family: "St Marie";
+    color: #ff9c00;
+    width: 400px;
+    margin-top: 5px;
+    margin-left: 425px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid;
+}
+
+.form {
+	height: 470px;
+}
+
+.form p {
+	padding-top: 70px;
+}
+
+.form p label {
+	float: left;
+	font-size: 24px;
+	font-family: "St Marie";
+	color: #fb9c06;
+}
+
+.form p:last-child {
+	height: 100px;
+}
+
+.form p input {
+	float: right;
+	height: 35px;
+	width: 1065px;
+	background-color: #f8f7f6;
+	opacity: 0.922;
+	box-shadow: inset 6px 3px 0px 0px #d2d0cf;
+	border: none;
+	padding: 5px 10px 5px 10px;
+}
+
+.form p textarea {
+	float: right;
+	height: 90px;
+	width: 1065px;
+	background-color: #f8f7f6;
+	opacity: 0.922;
+	box-shadow: inset 6px 3px 0px 0px #d2d0cf;
+	border: none;
+	padding: 5px 10px;
+}
+
+.form button {
+    margin-top: 20px;
+    margin-left: 990px;
+	background-color: #fb9c06;
+    width: 175px;
+    height: 45px;
+    font-size: 30px;
+    font-family: "St Marie";
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+    border: 1px solid #fdd18b;
+    box-shadow: 0 4px 0px 0 #cc8310;
+}
+
+.form button:hover {
+	cursor: pointer;
+	font-weight: 700;
+	color: #fb9c06;
+	background-color: #fff;
+	box-shadow: 2px 2px 2px 2px #fb9c06;
+}
+
+footer {
+	height: 70px;
+}
+
+.footer {
+	width: 100%;
+	height: 70px;
+	font-size: 33px;
+	font-weight: 400;
+	color: #fff;
+	text-align: center;
+	background-color: #ffac00;
+	position: fixed;
+	bottom: 0;
+	padding: 0 auto;
+	vertical-align: middle;
+	font-family: "St Marie";
+}
+
+.footer p {
+	padding: 15px 0px;
+}
